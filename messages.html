@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/sanitize.css">
+    <link rel="stylesheet" href="./CSS/messages.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&family=Noto+Serif+KR&display=swap" rel="stylesheet">
+
+    <title>Happy Birthday To You</title>
+</head>
+<body>
+    <div>
+        <h1>
+            お誕生おめでとうございます！
+        </h1>
+        <h2>
+            ～大切な人たちからの贈り物～
+        </h2>
+    </div>
+    <div class="grid">
+
+        <!--Person 1 Chihiro-->
+        <div class="person"> 
+            <div class="container">
+                <img src="./IMG/Chihiro.JPG" alt="おちっきー" class="images" style="object-position: 0 30%;">
+
+                <div class="middle">
+                    <button id="modalOpen1" class="name">千尋</button>
+                </div>
+            </div>
+        
+            <div id="easyModal1" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="modalClose Close1">&times</span>
+                    </div>
+                    <div class="modal-body">
+                        
+                        <img src="./IMG/Chihiro.JPG" alt="insert pic" width="100%">
+                        
+                        <p>お誕生日おめでとう。いつも数えきれないくらいたくさんの場面で話を聞いてくれたり、アドバイスをくれたりお世話になっております😢本当にありがとう。イギリスもそうやけどこれまでの留学やったり、JICAの授業やったり何に関しても行動力がすごいし、全部に関して中途半端にならず優秀な成績やったり成果を出していて、そういったことは自分には到底できないことで本当に尊敬します、、、埼玉行ってしまうのほんまに寂しくなると思う🥺行くなぁぁぁ〜〜〜
+                        <br>他にも書きたいことはあるのでお手紙にて💌<br>
+                        埼玉もちゃんと遊びに行くからな〜幸せになれよ〜
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Person 2 Dad-->
+        <div class="person">
+            <div class="container">
+                <img src="./IMG/Dad.JPG" alt="お父さん" class="images" style="object-position: 0 20%;">
+
+                <div class="middle">
+                    <button id="modalOpen2" class="name">お父さん</button>
+                </div>
+            </div>
+        
+            <div id="easyModal2" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="modalClose Close2">&times</span>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./IMG/Dad.JPG" alt="insert pic" width="100%">
+                        <p>瑞穂ちゃん、２３歳のお誕生日、おめでとう。<br>
+                        来年からは自立の年。まずは自分らしさを大切に、節度は保って、充実した生活が送れるよう努力して下さいね。期待しています。<br>
+                        お父さんより
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Person 3 Mom-->
+        <div class="person">
+            <div class="container">
+                <img src="./IMG/Mom.JPG" alt="ママ" class="images">
+
+                <div class="middle">
+                    <button id="modalOpen3" class="name">ママ</button>
+                </div>
+            </div>
+        
+            <div id="easyModal3" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="modalClose Close3">&times</span>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./IMG/Mom.JPG" alt="insert pic" width="100%">
+                        <p>瑞穂へ
+                            お誕生日、おめでとう！<br>
+                            瑞穂のママになって早２３年…振り返れば色んな事があったね。
+                            常に周りへの感謝を忘れない素敵な女性に成長してくれて嬉しく思っています。<br>
+                            来年、親元を離れて新しい生活が始まるけれど、自分らしさを大切にしつつ更に成長出来るとイイね😊<br>
+                            若さ、行動力、自由のある今を大切に過ごしてね😆
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Person 4 Shogo-->
+        <div class="person">
+            <div class="container">
+                <img src="./IMG/Shogo.jpg" alt="しょっきー" class="images" style="object-position: 0 40%;">
+
+                <div class="middle">
+                    <button id="modalOpen4" class="name">昌吾</button>
+                </div>
+            </div>
+        
+            <div id="easyModal4" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="modalClose Close4">&times</span>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./IMG/Shogo.jpg" alt="insert pic" width="100%">
+                        <p>誕生日おめでとう🎊
+                            いつも生意気次郎な僕に優しくしてくれてありがとうございます🙇‍♂️
+                            埼玉に行っても頑張ってください😁
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Person 5 Iori-->
+        <div class="person">
+            <div class="container">
+                <img src="./IMG/Iori1.jpg" alt="伊織君" class="images" style="object-position: 0 30%;">
+
+                <div class="middle">
+                    <button id="modalOpen5" class="name">伊織</button>
+                </div>
+            </div>
+        
+            <div id="easyModal5" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="modalClose Close5">&times</span>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./IMG/Iori2.jpg" alt="insert pic" width="100%">
+                        <p>Happy Birthday! 今年はこのデジタル色紙を用意してみました！貴女の大切な人々からのメッセージです🥰<br>
+                        今年も素晴らしい一年にしてみてください🍀共にまた新しい思い出を沢山作ろうね。<br>
+                        May your year to come be full of love and excitement, for you shall receive all the joy in this world. Wishing you a very happy birthday.
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Person 6 Yamakawa-san-->
+        <div class="person">
+            <div class="container">
+                <img src="./IMG/Yamakawa2.jpg" alt="山河" class="images">
+
+                <div class="middle">
+                    <button id="modalOpen6" class="name">山河優希</button>
+                </div>
+            </div>
+        
+            <div id="easyModal6" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="modalClose Close6">&times</span>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./IMG/Yamakawa.jpg" alt="insert pic" width="100%">
+                        <p>河原！お誕生日おめでとう！<br>
+                            お互いのお誕生日を迎える度に長い付き合いであることを意識し、本当に有難いことだなと嬉しく思います。<br>
+                            願わくばこれからも、苗字や見た目が変わっても、ずっと仲良くしてください。<br>
+                            23歳おめでとう。<br>
+                            貴女の1年が良いものであることを心より願っています。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Person 7 Miyu-san-->
+        <div class="person">
+            <div class="container">
+                <img src="./IMG/Miyu.jpg" alt="未夢" class="images">
+
+                <div class="middle">
+                    <button id="modalOpen7" class="name">小林未夢</button>
+                </div>
+            </div>
+        
+            <div id="easyModal7" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="modalClose Close7">&times</span>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./IMG/Miyu.jpg" alt="insert pic" width="100%">
+                        <p>🤍みずちん🤍<br>
+                            23歳のお誕生日おめでとう！🎂😊🕊
+                            いつも自分の信じた道を突き進んでるみずちんはほんまにかっこいいし、尊敬もしてる…❕<br>
+                            お互いそれぞれの道を進んでるけど、今もこうやって仲良しでおれるんほんまに嬉しいし、これからもずっとずっと仲良しでいよね🥳🤞
+                            いおり君ともずっと仲良しでおってね🤍🤍<br>
+                            またゆっくり会おな！！！💐<br>
+                            みずちんにとって、実りあるステキな一年になりますように…！！<br>
+                            未夢より🦜
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Person 8 Ibuki-->
+        <div class="person">
+            <div class="container">
+                <img src="./IMG/Ibuki1.JPG" alt="伊吹" class="images">
+
+                <div class="middle">
+                    <button id="modalOpen8" class="name">伊吹</button>
+                </div>
+            </div>
+        
+            <div id="easyModal8" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="modalClose Close8">&times</span>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./IMG/Ibuki2.jpg" alt="insert pic" width="100%">
+                        <p>親愛なるみずほさんへ<br>
+                            縁とは不思議なもので、伊織がこんなに気の合う素敵な方と出会えたことも、僕がそんな微笑ましい二人と知り合えたことも、全くバラバラな生まれ育ちを考えると奇跡のようなものではないかと、深く感じます。<br>
+                            伊織くんならまだしも、僕みたいなどこの馬の骨かもわからんようなやつ、もはやあほすぎて馬本体に鹿の角が生えたような珍獣に、慈母の如き愛しみを手向けてくれるみずほさんなら絶対に来たる一年、もっともっと幸せが訪れることでしょう。<br>
+                            京都奈良のお返しを矮小なる馬鹿なりに考えた結果、次こっち来る機会があれば、馬場の馬ーで準備馬ん端な彼氏さんとの馬ん酌の馬をセッティングして差し上げたく存じます。みずほさん、お二人のためならば不詳私め、いつでも奔走いたしましょう。
+                            <br>
+                            そんなあたなへ、僕の大事な言葉を送ります。
+                            <br> <br>
+                            ナジェヌン ッタサロウン インガジョギン ヨジャ<br>
+                            コピ ハンジャネ ヨユルルアヌン プムキョクインヌン ヨジャ<br>
+                            パミ オミョン シムジャンイ ットゥゴウォジヌン ヨジャ<br>
+                            クロン パンジョン インヌン ヨジャ<br>
+                            (中略) <br>
+                            オッパン カンナムスタイルAｈ <br>
+                             カンナムスタイル オ(×４) <br>
+                            オッパン カンナムスタイルAｈ <br>
+                             カンナムスタイル オ(×４) <br>
+                            オッパン カンナムスタイル
+                            <br> <br>
+                            以上、素敵な一年をお過ごしください。馬ーい
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Person 9 Szymon-->
+        <div class="person">
+            <div class="container">
+                <img src="./IMG/Szymon2.JPG" alt="Szymon" class="images">
+
+                <div class="middle">
+                    <button id="modalOpen9" class="name">Szymon</button>
+                </div>
+            </div>
+        
+            <div id="easyModal9" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="modalClose Close9">&times</span>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./IMG/Szymon1.JPG" alt="insert pic" width="100%">
+                        <p>Happy Birthday Mizuho, I wish you the best birthday and good fortune going forward, hopefully I'll see you guys soon!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Person 10 Haroon-->
+        <div class="person">
+            <div class="container">
+                <img src="./IMG/Haroon1.jpg" alt="Haroon" class="images" style="object-position: 0 10%;">
+
+                <div class="middle">
+                    <button id="modalOpen10" class="name">Haroon</button>
+                </div>
+            </div>
+        
+            <div id="easyModal10" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="modalClose Close10">&times</span>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./IMG/Haroon2.jpg" alt="insert pic" width="100%">
+                        <p>"Happy Birthday Mizuho. I hope you have an amazing day and a blessed year ahead."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Person 11 Jade-->
+        <div class="person">
+            <div class="container">
+                <img src="./IMG/Jade.jpg" alt="Jade" class="images" style="object-position: 30% 30%;">
+
+                <div class="middle">
+                    <button id="modalOpen11" class="name">Jade</button>
+                </div>
+            </div>
+        
+            <div id="easyModal11" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="modalClose Close11">&times</span>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./IMG/Jade.jpg" alt="insert pic" width="100%">
+                        <p>Happy Birthday Mizuho! We all miss you so much and hope you have a lovely birthday over in Japan! I hope to be able to come visit you one day soon :) 🥰 lots of love, Jade x
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Person 12 Catherine-->
+        <div class="person">
+            <div class="container">
+                <img src="./IMG/Cath.jpg" alt="Catherine" class="images">
+
+                <div class="middle">
+                    <button id="modalOpen12" class="name">Cath</button>
+                </div>
+            </div>
+        
+            <div id="easyModal12" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="modalClose Close12">&times</span>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./IMG/Cath.jpg" alt="insert pic" width="100%">
+                        <p>Mizuho! ハッピーバースデー！<br>
+                            I am so happy to have met you and be your friend. You are so kind and I can’t wait until I can see you again! Have an amazing birthday and continue having lots of fun🥳🤍
+                            <br><br>
+                            Love from,
+                            Catherine ♡
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Person 13 Andy-->
+        <div class="person">
+            <div class="container">
+                <img src="./IMG/Andy.jpg" alt="Andy" class="images">
+
+                <div class="middle">
+                    <button id="modalOpen13" class="name">Andy</button>
+                </div>
+            </div>
+        
+            <div id="easyModal13" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="modalClose Close13">&times</span>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./IMG/Andy.jpg" alt="insert pic" width="100%">
+                        <p>Hi Mizuho,<br>
+                            Happy birthday! I hope you're doing well in life and that you enjoy your special day today. We are always thinking about you here in England and can't wait until you come back!
+                            <br>
+                            You were such a wonderful person to be around last year, and I still remember watching 3 Idiots with you in my room. Your coffee is still the best :)
+                            <br>
+                            Wishing you good health and a swift return to England!
+                            <br><br>
+                            -Andy kun
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Person 14 Lei-->
+        <div class="person">
+            <div class="container">
+                <img src="./IMG/Lei.JPG" alt="Lei" class="images">
+
+                <div class="middle">
+                    <button id="modalOpen14" class="name">Lei</button>
+                </div>
+            </div>
+        
+            <div id="easyModal14" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="modalClose Close14">&times</span>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./IMG/Lei.JPG" alt="insert pic" width="100%">
+                        <p>Hey Mizuho,
+                            <br>
+                            Happy Birthday! :) I hope you have a lovely day, and that this year brings you joy and happiness. We miss you here so much. You always lit up the room, and it's weird to have you gone after all the fun times we had. I can't wait to see you again.
+                            <br><br>
+                            I hope you're doing well, and I look forward to the fun we'll have when you return to England at some point :)
+                            <br><br>
+                            -Lei
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Person 15 Ronek-->
+        <div class="person">
+            <div class="container">
+                <img src="./IMG/Ronek.jpg" alt="Ronek" class="images">
+
+                <div class="middle">
+                    <button id="modalOpen15" class="name">Ronek</button>
+                </div>
+            </div>
+        
+            <div id="easyModal15" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="modalClose Close15">&times</span>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./IMG/Ronek.jpg" alt="insert pic" width="100%">
+                        <p>Hey Mizuho, Happy birthday!
+                            Hope things are going well for you. Based on your Instagram you seem to be having a great time so I’m happy for you :)! I hope I can visit you guys in Japan at some point, but my life seems pretty booked for the next year or so, so not that soon unfortunately :’/. Let us know if you guys plan to visit the UK or even HK, I’ll see if I can come around.
+                            Best of wishes for the coming year and Good luck! Ganbatte!
+                            -Ronk
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Person 16 Adams-->
+        <div class="person">
+            <div class="container">
+                <img src="./IMG/Adams.jpg" alt="Adam & Adam" class="images">
+
+                <div class="middle">
+                    <button id="modalOpen16" class="name">Adam Zirky <br>& <br> Adam Bear</button>
+                </div>
+            </div>
+        
+            <div id="easyModal16" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="modalClose Close16">&times</span>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./IMG/Adams.jpg" alt="insert pic" width="100%">
+                        <div>
+                        <p>"Wishing You a happy Birthday Mizuho, I hope your doing well there" -Adam Bear
+                        </p>
+                        <p>"Best of Wishessssss on your Birthday Mizuho... Spend the grandest time enjoying yourself and all that comes.. Miss you lots" -Adam Zirky
+                        </p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Person 17 Ryan-->
+        <div class="person">
+            <div class="container">
+                <img src="./IMG/Ryan.jpg" alt="Ryan" class="images" style="object-position: 0 10%;">
+
+                <div class="middle">
+                    <button id="modalOpen17" class="name">Ryan Walsh</button>
+                </div>
+            </div>
+        
+            <div id="easyModal17" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="modalClose Close17">&times</span>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./IMG/Ryan.jpg" alt="insert pic" width="100%">
+                        <p>Happy birthday Miffy, I hope that the forthcoming year goes as well as the last one.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Person 18 Tori-->
+        <div class="person">
+            <div class="container">
+                <img src="./IMG/Tori1.jpg" alt="Tori" class="images" style="object-position: 90% 90%;">
+
+                <div class="middle">
+                    <button id="modalOpen18" class="name">Tori</button>
+                </div>
+            </div>
+        
+            <div id="easyModal18" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="modalClose Close18">&times</span>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./IMG/Tori2.jpg" alt="insert pic" width="100%">
+                        <p>"Happiest of birthdays to a true friend, your kindness and curiosity make you one of a kind. May our paths cross again! <br>
+                        Your friend,
+                        Tori”"
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Person 19 Kaori-->
+        <div class="person">
+            <div class="container">
+                <img src="./IMG/Kaori.jpg" alt="Kaori Kameda" class="images">
+
+                <div class="middle">
+                    <button id="modalOpen19" class="name">Kaori Kameda</button>
+                </div>
+            </div>
+        
+            <div id="easyModal19" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="modalClose Close19">&times</span>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./IMG/Kaori.jpg" alt="insert pic" width="100%">
+                        <p>瑞穂さん<br>
+                            お誕生日おめでとうございます！<br>
+                            瑞穂さんたちと一緒にレスターでお食事した日々がもう懐かしいです。
+                            ご旅行やイベントのお写真いつも楽しみにしてます！<br>
+                            日本でもイギリスでも他の国でも(笑)またぜひ一緒にご飯に行きましょう！<br>
+                            この一年が、瑞穂さんにとって幸せたっぷりの一年になりますように。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Person 20 Ayaka-->
+        <div class="person">
+            <div class="container">
+                <img src="./IMG/Ayaka.JPG" alt="Ayaka Umetani" class="images">
+
+                <div class="middle">
+                    <button id="modalOpen20" class="name">梅谷彩香</button>
+                </div>
+            </div>
+        
+            <div id="easyModal20" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="modalClose Close20">&times</span>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./IMG/Ayaka.JPG" alt="insert pic" width="100%">
+                        <p>お誕生日おめでとう！時々インスタで元気そうな姿を見て私も元気もらってます！<br>
+                        私も先月に帰国したので東京周辺来る時にはぜひ連絡ください、ご飯にでも行きましょう😆<br>
+                        素敵な1年になりますように✨
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Person 21 Moena-->
+        <div class="person">
+            <div class="container">
+                <img src="./IMG/Moena.jpg" alt="Moena" class="images">
+
+                <div class="middle">
+                    <button id="modalOpen21" class="name">Moena</button>
+                </div>
+            </div>
+        
+            <div id="easyModal21" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="modalClose Close21">&times</span>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./IMG/Moena.jpg" alt="insert pic" width="100%">
+                        <p>Happy birthday Mizuho chan!! I hope you have a great birthday!
+                        <br>
+                        またいつか日本かイギリスでお会いしましょう💗
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Person 22 Ellena-->
+        <div class="person">
+            <div class="container">
+                <img src="./IMG/Ellena.jpg" alt="Ellena" class="images">
+
+                <div class="middle">
+                    <button id="modalOpen22" class="name">Ellena</button>
+                </div>
+            </div>
+        
+            <div id="easyModal22" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="modalClose Close22">&times</span>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./IMG/Ellena.jpg" alt="insert pic" width="100%">
+                        <p>お誕生日おめでとう〜！いつも寛大な心で関西弁で暖かく包み込んでくれる優しさには感謝してます🫶いつでも年上の頼れるお姉さんって感じ！これからも2人仲良く料理の腕を磨いて、私をもてなしてください(図々しい)笑　社会人大変だと思うけどいつでも連絡してきてね〜いい一年になりますように！！！
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Person 23 Shiori-->
+        <div class="person">
+            <div class="container">
+                <img src="./IMG/Shiori.jpg" alt="Shiori" class="images" style="object-position: 0 80%;">
+
+                <div class="middle">
+                    <button id="modalOpen23" class="name">志織</button>
+                </div>
+            </div>
+        
+            <div id="easyModal23" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="modalClose Close23">&times</span>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./IMG/Shiori.jpg" alt="insert pic" width="100%">
+                        <p>みずほさんへ
+                        <br>
+                        お誕生日おめでとうございます💓
+                        レスターにきて、短い期間だったけどみずほさんに出会えて、ちょっとお茶したり、一緒にお出かけできたりできて楽しかったです! <br>
+                        美人さんで優しくてすごく素敵な女性だなと思ってました🥰いおりくんも含め、みずほさんにはとってもお世話になりました🙇‍♀️とても感謝です🫂 <br>
+                        日本で会えるの楽しみにしてます！その時は一緒に京都の美味しいもの東京の美味しいもの食べましょう! <br>
+                        今年一年もみずほさんにとって素敵な一年になりますように💓素敵な誕生日を🎂
+                        <br>
+                        志織
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Person 24 Nara-->
+        <div class="person">
+            <div class="container">
+                <img src="./IMG/Nara.JPG" alt="奈良勢" class="images" style="object-position: 0% 0;">
+
+                <div class="middle">
+                    <button id="modalOpen24" class="name">中俊輔 <br>& <br> 薄葉伸裕</button>
+                </div>
+            </div>
+        
+            <div id="easyModal24" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="modalClose Close24">&times</span>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./IMG/Nara.jpg" alt="insert pic" width="100%">
+                        <div>
+                        <p>瑞穂
+                            <br>
+                            お誕生日おめでとうございます！
+                            実りある1年になることを奈良からお祈りいたします！<br>
+                            慣れないこと、大変なこと、いろいろある年かと思いますが、いい1年にしてください！ <br>
+                            伊織が変な事してたらぜひ連絡してください。内輪で美味しく頂きます。<br>
+                            (中)
+                        </p>
+                        <p>
+                            お誕生日おめでとうございます！<br> 薄葉
+                        </p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Person 25 Changheon-->
+        <div class="person">
+            <div class="container">
+                <img src="./IMG/Changheon1.png" alt="Changheon" class="images" style="object-position: 0 10%;">
+
+                <div class="middle">
+                    <button id="modalOpen25" class="name">김 창헌</button>
+                </div>
+            </div>
+        
+            <div id="easyModal25" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="modalClose Close25">&times</span>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./IMG/Changheon2.JPG" alt="insert pic" width="150%">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Person 26 Youngwoong-->
+        <div class="person">
+            <div class="container">
+                <img src="./IMG/Youngwoong.jpg" alt="Youngwoong" class="images">
+
+                <div class="middle">
+                    <button id="modalOpen26" class="name">임 영웅
+                    </button>
+                </div>
+            </div>
+        
+            <div id="easyModal26" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="modalClose Close26">&times</span>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./IMG/Youngwoong.jpg" alt="insert pic" width="100%">
+                        <p>Hello Mizuho!! <br>
+                            How's it going??
+                            I can't believe the days we have been in UK was a year before. Time flies🥲🥲 <br>
+                            Btw I am suffering in a hard days becuz of preparing my future. I actually decided to prepare an exam for 外交官, which is really challenging, but really passionate for it even though I actually gave up the career that i have made in my business major.
+                            That makes me quite anxious but haha it is what it is !
+                            I will do my best to achieve my goal and really wanna visit japan after acheiving it😀😀 <br>
+                            I actually fell in love with japanese food deeply in these days and I really miss the donkatsu(fried pork?) U made for me. Even though we stay apart from japan to korea, i promise that japan and your town will be the first place i would go as a trip!!😊 <br>
+                            It will be really fun to see you and Iori in your town, eating food together, making food together as we did in japanese&korean party in UK !!
+                            Until then, stay healthy and Keeping love with Iori as u guys always did!! <br>
+                            It makes me really happy and smiling seeing u guys loving together, also gave me motivation for studying hard to visit u guys! <br>
+                            <br>
+                            お誕生日おめでとうございます!🥰
+                            우리 꼭 일본과 한국에서 만나요!
+                            -영웅이가 미즈호에게-
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Person 27 Younghyeon-->
+        <div class="person">
+            <div class="container">
+                <img src="./IMG/Younghyeon.jpg" alt="Younghyeon" class="images" style="object-position: 100% 0;">
+
+                <div class="middle">
+                    <button id="modalOpen27" class="name">이 용현
+                    </button>
+                </div>
+            </div>
+        
+            <div id="easyModal27" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="modalClose Close27">&times</span>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./IMG/Younghyeon.jpg" alt="insert pic" width="100%">
+                        <p>Hi, 민주
+                            Do you remember me?
+                            Happy birthday :)
+                            I’m still happy whenever remind our journey in malaga. And sometimes I miss the moment that we had in the UK.
+                            <br>
+                            I was really surprised when I heard that you and iori become together.
+                            And I think you guys are really really wonderful couple🤗
+                            <br>
+                            Have a lovely day, and I strongly look forward to seeing you again.
+                            <br>
+                            Happy birthday again!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Person 28 Hyeonseo-->
+        <div class="person">
+            <div class="container">
+                <img src="./IMG/Hyeonseo.jpg" alt="Hyeonseo" class="images" style="object-position: 0 30%;">
+
+                <div class="middle">
+                    <button id="modalOpen28" class="name">현서
+                    </button>
+                </div>
+            </div>
+        
+            <div id="easyModal28" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="modalClose Close28">&times</span>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./IMG/Hyeonseo.jpg" alt="insert pic" width="100%">
+                        <p>HI MIFFY👋🏻 HAPPY B DAY🤍<br>
+                            It's been almost an year since I left UK. I really miss that time these days. I'm so glad we can still keep in touch with each other😊
+                            I hope everything goes well for ur entire life. <br>
+                            Happy birthday once again. Have a good day!!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Person 29 Juhyeon-->
+        <div class="person">
+            <div class="container">
+                <img src="./IMG/Juhyeon.jpg" alt="Juhyeon" class="images" style="object-position: 0% 40%;">
+
+                <div class="middle">
+                    <button id="modalOpen29" class="name">정 주현</button>
+                </div>
+            </div>
+        
+            <div id="easyModal29" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="modalClose Close29">&times</span>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./IMG/Juhyeon.jpg" alt="insert pic" width="100%">
+                        <p>미즈호 お誕生日おめでとう !!
+                            君とのイギリスでの日々が懐かしい。<br>
+                            いつか会いに日本へ遊びに行くよ。
+                            その時、またいい思い出をたくさん作ろう。<br>
+                            その時まで元気に過ごしてね。
+                            あなたの誕生日を心からお祝いしながら<br>
+                            주현이가-❤️❤️❤️
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Person 30　Kim-->
+        <div class="person">
+            <div class="container">
+                <img src="./IMG/Kim.jpg" alt="Kim" class="images">
+
+                <div class="middle">
+                    <button id="modalOpen30" class="name">Kim</button>
+                </div>
+            </div>
+        
+            <div id="easyModal30" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="modalClose Close30">&times</span>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./IMG/Kim.jpg" alt="insert pic" width="100%">
+                        <p>Happy Birthday Mizuho!
+                            I was so glad to meet you in <Leicester class="br"></Leicester>
+                            Hope you could make your birthday the best day ever!
+                            And also hope you could make some amazing memories with your boyfriend for a long time!!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Person 31 Ellie-->
+        <div class="person">
+            <div class="container">
+                <img src="./IMG/Ellie.jpg" alt="Ellie" class="images" style="object-position: 0% 20%;">
+
+                <div class="middle">
+                    <button id="modalOpen31" class="name">Ellie</button>
+                </div>
+            </div>
+        
+            <div id="easyModal31" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="modalClose Close31">&times</span>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./IMG/Ellie.jpg" alt="insert pic" width="100%">
+                        <p>"Happy birthday Miffy! I hope you have the loveliest of birthdays, it's a shame I can't be there to give my birthday wishes in person 💗💗"
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Person 32 Ara-->
+        <div class="person">
+            <div class="container">
+                <img src="./IMG/Ara.jpg" alt="insert pic" class="images">
+
+                <div class="middle">
+                    <button id="modalOpen32" class="name">Ara</button>
+                </div>
+            </div>
+        
+            <div id="easyModal32" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="modalClose Close32">&times</span>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./IMG/Ara.jpg" alt="insert pic" width="100%">
+                        <p>mizuho-chan! happy birthday!!❤️ Knowing you is one of the most memorable memories when i was in UK and i wish you'll be succes in the path that you choose! Japan is my dream country for a long time and i'm manifesting to go there one day, so we'll meet when it's time! So please stay healthy kay! ❤️
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="ascend">
+        <a href="#">Back to Top</a>
+    </div>
+<br>
+    <footer>
+        <div>
+            <p>Happy birthday Mizuho. 23歳おめでとう。</p>
+            <p> 2022/11/19 To my dearest. </p>
+        </div>
+    </footer>
+
+<script src="./JS/messages.js"></script>
+
+</body>
+</html>
