@@ -101,6 +101,13 @@ a {
   background-size: cover;
 }
 
+footer {
+  position: fixed;
+  left: 0px;
+  bottom: 5px;
+  color: white;
+}
+
 /*矢印の設定*/
 .slick-prev, 
 .slick-next {
@@ -111,7 +118,6 @@ a {
   height: 25px;
   width: 25px;
 }
-
 
 /*ドットナビゲーションの設定*/
 .slick-dots {
