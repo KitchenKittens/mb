@@ -22,5 +22,5 @@ $('.slider').on('touchmove', function(event, slick, currentSlide, nextSlide){
 
 
 $(document).ready(function(){
-    $('#delay').hide().delay(10000).fadeIn('slow');
+    $('#delay').hide().delay(5000).fadeIn('slow');
 })
