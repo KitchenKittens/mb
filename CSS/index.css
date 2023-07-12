@@ -1,11 +1,38 @@
 @charset "utf-8";
-
-
 /* 本文のCSS */
 body {
   margin: 0;
   height: 100vh;
   overflow: hidden;
+}
+
+h1, h2, h3 {
+  font-family: 'Gruppo', cursive;
+  position: absolute;
+  z-index: 5;
+  left: 50%;
+  transform: translate(-50%, -90%);
+  text-align: center;
+  color: #fff;
+}
+
+h1 {
+  top: 40%;
+  font-size:52px;
+  letter-spacing: 0.2em;
+}
+
+h2 {
+  top: 55%;
+  font-size: 32px;
+  letter-spacing: 0.1em;
+}
+
+h3 {
+  text-decoration: none;
+  top: 75%;
+  font-size: 24px;
+  letter-spacing: 0.01em;
 }
 
 ul{
@@ -14,54 +41,9 @@ ul{
   list-style: none;
 }
 
-h1, h2, h3 {
-  font-family: 'Gruppo', cursive;
-}
-
-h1 {
-  position: absolute;
-  z-index: 5;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -90%);
-  text-align: center;
-  font-size:52px;
-  letter-spacing: 0.2em;
-  color: #fff;
-}
-
-h2 {
-  position: absolute;
-  z-index: 5;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -90%);
-  text-align: center;
-  font-size: 32px;
-  letter-spacing: 0.1em;
-  color: #fff;
-}
-
-h3 {
-  text-decoration: none;
-  position: absolute;
-  z-index: 5;
-  top: 75%;
-  left: 50%;
-  transform: translate(-50%, -90%);
-  text-align: center;
-  font-size: 24px;
-  letter-spacing: 0.01em;
-  color: #fff;
-}
-
 a {
   text-decoration: none;
   color: #fff;
-}
-
-.wrapper{
-  position: relative;
 }
 
 .slider {
@@ -101,51 +83,66 @@ a {
   background-size: cover;
 }
 
-footer {
-  position: fixed;
-  left: 0px;
-  bottom: 5px;
-  color: white;
+.footer {
+  width: 100%;
+  position: absolute;
+  padding-right: 10px;
+  bottom: 0;
+  color: #fff;
+  text-align:end;
+  font-size: 10px;
+  z-index: 1;
 }
 
-/*矢印の設定*/
+/*参考
+/*矢印の設定
 .slick-prev, 
 .slick-next {
-  display: none;
   position: absolute;
   z-index: 3;
-  top: 42%;
-  height: 25px;
-  width: 25px;
+  top: 50%;
+  height: 20px;
+  width: 20px;
+  padding: 0;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.slick-prev {
+  left: 25px;
+}
+.slick-next {
+  right: 25px;
 }
 
-/*ドットナビゲーションの設定*/
+/*ドットナビゲーションの設定
 .slick-dots {
-  display: none;
   position: relative;
   z-index: 3;
   text-align:center;
   margin:-50px 0 0 0;
 }
-
 .slick-dots li {
   display:inline-block;
-  margin:0 5px;
+  margin:0 10px;
 }
-
 .slick-dots button {
   color: transparent;
   outline: none;
-  width:8px;
-  height:8px;
+  width:5px;
   display:block;
   border-radius:50%;
-  background:#fff;
+  background:#333;
 }
-
 .slick-dots .slick-active button{
-    background:#333;
+    background:#fff;
 }
+*/
 
 /* Media Query */
 @media(max-width: 800px) {

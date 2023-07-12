@@ -26,7 +26,6 @@ function outsideClose1(e) {
   }
 }
 
-
 //Person 2
 const buttonOpen2 = document.getElementById('modalOpen2');
 const modal2 = document.getElementById('easyModal2');

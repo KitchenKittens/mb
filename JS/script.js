@@ -1,11 +1,9 @@
 $('.slider').slick({
     fade:true,
     autoplay: true,
-
     autoplaySpeed: 2000, //切り替わる待ち時間
-    speed:1000, //スライドの動きのスピード
-
-    infinite: true,
+    speed: 1000, //スライドの動きのスピード
+    infinite: true, //ループ
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
@@ -20,7 +18,6 @@ $('.slider').on('touchmove', function(event, slick, currentSlide, nextSlide){
     $('.slider').slick('slickPlay');
 });
 
-
 $(document).ready(function(){
-    $('#delay').hide().delay(5000).fadeIn('slow');
+    $('#delay').hide().delay(1000).fadeIn('slow');
 })
