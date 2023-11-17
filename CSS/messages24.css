@@ -1,0 +1,192 @@
+/*全体概要*/
+* {
+  scrollbar-width: none;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to bottom left, #008080, #00CED1, #f7cac9, #dec2cb, #c5b9cd, #c5b9cd, #dec2cb);
+}
+
+
+h1, h2{
+  text-align: center;
+  color: #fff;
+}
+
+h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 40px;
+}
+
+/*画像ブロック*/
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin: 25px 5%;
+}
+
+.flip-container {
+  position: relative;
+  width: 100%;
+  height: 20vw;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s, visibility 0.5s; /* Add visibility transition for visual correctness*/
+}
+
+.front,
+.back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: visibility 0.5s, opacity 0.5s, transform 0.25s;
+}
+
+.back {
+  transform: rotateY(180deg); /* Set the initial state for the back face */
+  visibility: hidden;
+  align-content: center;
+}
+
+.front:hover {
+  transform: scale(1.03);
+}
+
+.front:hover, .back:hover {
+  cursor: pointer;
+}
+
+.front img,
+.back img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20%;
+}
+
+.back img {
+  z-index: 1;
+  opacity: 0.4;
+}
+
+/*数字とテキスト*/
+.numbering {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-size: 300%;
+  font-family: 'Macondo', cursive;
+}
+
+.text-on-back {
+  z-index: 2;
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-family: 'Klee One', cursive;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5s;
+  text-shadow: 6px 6px 4px rgba(255, 255, 255, 0.5);
+}
+
+.text-on-back p {
+  margin: 5%;
+}
+
+/*ページ下部*/
+.bottom-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.bottom-buttons button {
+  color: #ffffff7f;
+  background-color: transparent;
+  border: 1px solid #ffffff7f;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.bottom-buttons button:hover {
+  cursor: pointer;
+}
+
+.tbc {
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Dancing Script', cursive;
+  color:#000;
+  margin: auto auto 5%;
+}
+
+.ascend {
+  text-align: center;
+}
+
+.ascend a {
+  text-decoration: none;
+  color: #000;
+  font-size: small;
+}
+
+footer {
+  text-align: center;
+}
+
+/* Media Query */
+@media (max-width: 900px) {
+  .text-on-back {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  h1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin: auto 10%;
+  }
+
+  .flip-container {
+    height: 35vh;
+  }
+
+  .front img,
+  .back img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px; /* Adjust border-radius */
+  }
+
+  .text-on-back {
+    font-size: 20px;
+  }
+}
