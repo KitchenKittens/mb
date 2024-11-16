@@ -111,4 +111,3 @@ document.getElementById('book').addEventListener('touchend', function(event) {
 // Initialize the book
 createPages();
 updateBook();
-
