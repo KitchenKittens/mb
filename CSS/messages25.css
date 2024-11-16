@@ -1,0 +1,213 @@
+/* General Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, 
+        rgba(0, 163, 162, 1.0) 0%,  /* Teal with slightly translucent effect at the start */
+        rgba(192, 192, 192, 0.2) 50%,  /* Subtle silver transitioning */
+        rgba(255, 215, 0, 0.5) 80%,  /* Soft gold towards the end */
+        rgba(255, 215, 0, 1.0) 100% /* Bold gold for the outer edges */
+    );
+}
+
+h1 {
+    text-align: center;
+    font-family: "Shadows Into Light", cursive;
+    font-size: 50px;
+    font-style: normal;
+}
+
+h2 {
+    text-align: center;
+    font-family: "Bonheur Royale", cursive;
+    font-size: 60px;
+    font-style: normal; 
+}
+
+.page p {
+    font-family: "Bonheur Royale", cursive;
+    font-size: 30px;
+    font-weight: 400;
+    font-style: normal; 
+}
+
+/* Book Container Styling */
+.book-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#book {
+    position: relative;
+    width: 90vw; /* Adjust width based on viewport width */
+    height: 70vh; /* Adjust height based on viewport height */
+    overflow: hidden;
+    perspective: 1500px;
+    max-width: 900px; /* Set a maximum size */
+    max-height: 900px; /* Set a maximum height */
+    transition: width 0.3s, height 0.3s;
+}
+
+/* Page Styling */
+.page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+    overflow: hidden;
+}
+
+.page.active {
+    opacity: 1;
+}
+
+.cover {
+    background-color: #f28b82;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.page img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire page without stretching */
+    border-radius: 10px;
+}
+
+/* Page Content: Adjusted to be at the bottom of the image */
+.page-content {
+    position: absolute;
+    bottom: 30px; /* Place content at the bottom */
+    left: 50%;
+    transform: translateX(-50%); /* Horizontally center the text */
+    color: white;
+    background-color: rgba(0, 163, 162, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 1;
+}
+
+#page-input {
+    width: 60px;
+    margin-top: 5px;
+    padding: 2px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 0.9rem;
+}
+
+/* For PC screens, if the image doesn't fill the page, add a blurred background */
+@media (min-width: 1024px) {
+    .page {
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    }
+
+    .page img {
+        object-fit: cover; /* Ensures the image fully covers the page */
+    }
+
+    .page-content {
+        position: absolute;
+        bottom: 30px; /* Adjust this to move the text closer to the bottom */
+        left: 50%;
+        transform: translateX(-50%); /* Horizontally center the text */
+        color: white;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+        z-index: 1;
+    }
+}
+
+/*Button design*/
+button {
+    width: 30px;
+    padding: 5px, 10px;
+    background: linear-gradient(to right,
+    rgba(192, 192, 192, 0.2) 0%,  /* Subtle silver transitioning */
+    rgba(255, 215, 0, 0.5) 40%,  /* Soft gold towards the end */
+    rgba(255, 215, 0, 1.0) 100% /* Bold gold for the outer edges */
+);
+    color: white;
+    border: none;
+    border-radius: 5px; /* Smooth rounded corners */
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    font-size: 1rem;
+}
+
+button:hover {
+    background: linear-gradient(to right, #00796b, #388e3c);
+    transform: translateY(-1px) scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: translateY(1px) scale(0.98);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 10px; /* Space at the bottom of the footer */
+}
+
+footer p {
+    margin: 5px 0;
+    color: #000;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    #book {
+        width: 90vw;
+        height: 60vh;
+    }
+    header h1 {
+        font-size: 2rem;
+    }
+    header h2 {
+        font-size: 1.2rem;
+    }
+    header h1,
+    .cover h2,
+    .cover p {
+        text-align: center;
+        line-height: 1.4;
+    }
+    header h1 span,
+    .cover h2 span,
+    .cover p span {
+        display: block;
+    }
+    footer p {
+        font-size: 0.9rem;
+    }
+    footer {
+        margin-bottom: 0px;
+    }
+}
