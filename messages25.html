@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/sanitize.css">
+    <link rel="stylesheet" href="./CSS/messages25.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./IMG25/favicon25.ico"/>
+    <title>Happy 25th Birthday</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>
+            <span>25 Pages </span>
+            <span>For Your 25th Birthday</span>
+        </h1>
+    </header>
+
+    <!-- Book Container -->
+    <div class="book-container">
+        <div id="book">
+            <!-- Cover Page -->
+            <div class="page cover" id="page-0">
+                <h2>
+                    <span>Your book </span> 
+                    <span>starts here...</span>
+                </h2>
+                <p>
+                    <span>"A Journey Through </span>
+                    <span>25 Moments of Love</span>
+                </p>
+            </div>
+        </div>
+
+        <!-- Navigation & Page Selector -->
+        <div class="navigation">
+            <div class="page-selector">
+                <input type="number" id="page-input" min="0" max="25" placeholder="0~25" />
+                <button onclick="goToPage()">Go</button>
+            </div>            
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div>
+            <p>Happy birthday Mizuho. 25歳おめでとう。</p>
+            <p>2024/11/19 To my dearest.</p>
+        </div>
+    </footer>
+
+    <script src="./JS/messages25.js"></script>
+</body>
+</html>
