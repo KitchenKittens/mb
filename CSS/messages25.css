@@ -153,6 +153,10 @@ h2 {
 
 /*Button design*/
 button {
+    display: inline-block;
+    text-align: center;
+    line-height: normal;
+    white-space: nowrap;
     width: 50px;
     padding: 5px, 10px;
     background: linear-gradient(to right,
