@@ -79,11 +79,22 @@ h2 {
 
 .cover {
     background-color: #f28b82;
+    background-image:
+    linear-gradient( rgba(222, 194, 203, 0.6), rgba(0, 163, 162, 0.6)), url(../IMG25/bookcover.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border-radius: 10px;
+}
+
+.cover h2, .cover p {
+    text-align: center;
+    margin: 10px 0;
 }
 
 .page img {
@@ -142,11 +153,11 @@ h2 {
 
 /*Button design*/
 button {
-    width: 100px;
+    width: 50px;
     padding: 5px, 10px;
     background: linear-gradient(to right,
-    rgba(192, 192, 192, 0.2) 0%,  /* Subtle silver transitioning */
-    rgba(255, 215, 0, 0.5) 40%,  /* Soft gold towards the end */
+    rgba(255, 215, 0, 0.5) 0%,  /* Soft gold towards the end */
+    rgba(192, 192, 192, 0.2) 40%,  /* Subtle silver transitioning */
     rgba(255, 215, 0, 1.0) 100% /* Bold gold for the outer edges */
 );
     color: white;
@@ -203,6 +214,10 @@ footer p {
     .cover h2 span,
     .cover p span {
         display: block;
+    }
+    .cover {
+        background-size: cover;
+        padding: 10px;
     }
     footer p {
         font-size: 0.9rem;
