@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const messages = [
     { title:"All our sunsets", meta:"サントリーニ・2022/5/17", text:"あなたと行った素敵な場所のこと。", img:`${basePath}/photo_A.jpg` },
-    { title:"Beach dates Bikini days", meta:"相模ビーチ・2024/8/3", text:"一緒に行った夏の思い出。", img:`${basePath}/photo_B.jpg` },
+    { title:"Beach dates, bikini days", meta:"相模ビーチ・2024/8/3", text:"一緒に行った夏の思い出。", img:`${basePath}/photo_B.jpg` },
     { title:"Cats. And maybe dogs?", meta:"川越・2024/10/26", text:"ぬことの出会い。犬もね。", img:`${basePath}/photo_C.jpg` },
     { title:"Dancing as sharks...", meta:"早稲田・2023/12/5", text:"瑞穂ちゃんのかわいさを実感した日。", img:`${basePath}/photo_D.jpg` },
     { title:"Every quite moments", meta:"北浦和・2023/10/30", text:"ぬいちゃんずのゆめ。", img:`${basePath}/photo_E.jpg` },
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     { title:"Inside jokes", meta:"レスター・2022/1/25", text:"えりまきとかげ。", img:`${basePath}/photo_I.jpg` },
     { title:"Journeying together", meta:"ミハス・2022/6/12", text:"美味しいものいっぱい。", img:`${basePath}/photo_J.jpg` },
     { title:"Keeping you close", meta:"O2・2022/5/28", text:"貴女のために。", img:`${basePath}/photo_K.jpg` },
-    { title:"Laughing nonstop", meta:"横浜・2025/7/27", text:"ふざけあい〜♪。", img:`${basePath}/photo_L.jpg` },
+    { title:"Laughing nonstop", meta:"横浜・2025/7/27", text:"ふざけあい〜♪", img:`${basePath}/photo_L.jpg` },
     { title:"Morning coffees", meta:"名古屋・2023/1/23", text:"記念日旅行も。", img:`${basePath}/photo_M.jpg` },
     { title:"Notes you left me", meta:"早稲田・2023/12/24", text:"感謝の気持ち。", img:`${basePath}/photo_N.jpg` },
     { title:"Our Europe trip!", meta:"ローマ・2021/12/23", text:"やはり旅はここでないと。", img:`${basePath}/photo_O.jpg` },
