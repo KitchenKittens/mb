@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     { title:"Cats. And maybe dogs?", meta:"川越・2024/10/26", text:"ぬことの出会い。犬もね。", img:`${basePath}/photo_C.jpg` },
     { title:"Dancing as sharks...", meta:"早稲田・2023/12/5", text:"瑞穂ちゃんのかわいさを実感した日。", img:`${basePath}/photo_D.jpg` },
     { title:"Every quite moments", meta:"北浦和・2023/10/30", text:"ぬいちゃんずのゆめ。", img:`${basePath}/photo_E.jpg` },
-    { title:"First I love you", meta:"レスター・2022/2/13 F", text:"初めてのバレンタイン。", img:`${basePath}/photo_F.jpg` },
+    { title:"First I love you", meta:"レスター・2022/2/13", text:"初めてのバレンタイン。", img:`${basePath}/photo_F.jpg` },
     { title:"Giggles and Kisses", meta:"日光・2023/9/30", text:"見ざる言わざる聞かざる。", img:`${basePath}/photo_G.jpg` },
     { title:"Holding hands", meta:"京都・2022/7/13", text:"初指輪...おそろ！", img:`${basePath}/photo_H.jpg` },
     { title:"Inside jokes", meta:"レスター・2022/1/25", text:"えりまきとかげ。", img:`${basePath}/photo_I.jpg` },
