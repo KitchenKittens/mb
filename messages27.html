@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#07061c">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./CSS/sanitize.css">
+  <link rel="stylesheet" href="./CSS/messages27.css">
+  <title>Happy 27th Birthday</title>
+</head>
+<body>
+
+  <!-- Icons -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-photo" viewBox="0 0 24 24">
+      <rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/>
+      <circle cx="9" cy="10.5" r="1.6" fill="currentColor"/>
+      <path d="M4 17l5-4.5 3.5 3L16 12l4 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="i-star" viewBox="0 0 24 24">
+      <path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3 6.1 20.6l1.3-6.6L2.5 9.4l6.6-.8z" style="fill:var(--star-fill,none)" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+    </symbol>
+  </svg>
+
+  <main class="cabinet" id="cabinet">
+
+    <!-- Marquee -->
+    <header class="marquee">
+      <p class="marquee-sub flicker">MIZUHO'S</p>
+      <h1 class="marquee-main flicker" id="marqueeMain">27 LUCKY MEMORIES</h1>
+      <div class="bulbs" aria-hidden="true"></div>
+    </header>
+
+    <section class="body">
+
+      <!-- Score -->
+      <div class="hud">
+        <div class="hud-box">
+          <span class="hud-label cyan">SCORE</span>
+          <output class="hud-val" id="counter" aria-label="Memories found">00 / 27</output>
+        </div>
+        <div class="hud-box end">
+          <span class="hud-label pink">RARE x3 = JACKPOT</span>
+          <div class="hud-val stars" id="stars" aria-hidden="true">
+            <svg class="star"><use href="#i-star"/></svg>
+            <svg class="star"><use href="#i-star"/></svg>
+            <svg class="star"><use href="#i-star"/></svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reels -->
+      <div class="bezel">
+        <div class="reels" id="reels">
+
+          <div class="reel" data-reel="1">
+            <i class="lamp"></i>
+            <div class="face">
+              <img class="face-img" alt="" hidden decoding="async">
+              <div class="ph"><svg class="ph-icon" aria-hidden="true"><use href="#i-photo"/></svg><span class="ph-label">?</span></div>
+              <div class="streak"></div>
+              <div class="scan"></div>
+            </div>
+          </div>
+
+          <div class="reel" data-reel="2">
+            <i class="lamp"></i>
+            <div class="face">
+              <img class="face-img" alt="" hidden decoding="async">
+              <div class="ph"><svg class="ph-icon" aria-hidden="true"><use href="#i-photo"/></svg><span class="ph-label">?</span></div>
+              <div class="streak"></div>
+              <div class="scan"></div>
+            </div>
+          </div>
+
+          <div class="reel" data-reel="3">
+            <i class="lamp"></i>
+            <div class="face">
+              <img class="face-img" alt="" hidden decoding="async">
+              <div class="ph"><svg class="ph-icon" aria-hidden="true"><use href="#i-photo"/></svg><span class="ph-label">?</span></div>
+              <div class="streak"></div>
+              <div class="scan"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Message -->
+      <section class="lcd" aria-labelledby="lcdTitle">
+        <div class="lcd-head"><span id="lcdTitle">MESSAGE</span><span id="status">READY</span></div>
+        <div class="lcd-body" aria-live="polite">
+          <p class="lcd-hint" id="lcdHint">ROLLボタンを押して、思い出を引こう。<span class="cursor">_</span></p>
+          <ol class="lcd-rows" id="lcdRows" hidden>
+            <li class="lcd-row"><b>1</b><div><h2></h2><p></p></div></li>
+            <li class="lcd-row"><b>2</b><div><h2></h2><p></p></div></li>
+            <li class="lcd-row"><b>3</b><div><h2></h2><p></p></div></li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Deck -->
+      <div class="deck">
+        <div class="joystick" aria-hidden="true"><i class="j-base"></i><i class="j-stick"></i><i class="j-ball"></i></div>
+
+        <div class="roll-ring">
+          <button type="button" class="roll-cap" id="rollBtn">ROLL</button>
+        </div>
+
+        <div class="coin" id="coin">
+          <span class="coin-label" id="coinLabel">INSERT COIN</span>
+          <button type="button" class="coin-plate" id="coinBtn" aria-label="Insert coin">
+            <i class="coin-slot"></i><i class="coin-chip"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Happy birthday Mizuho. 27歳おめでとう。</p>
+    <p>2026/11/19 To my dearest.</p>
+  </footer>
+
+  <script src="./JS/messages27.js" defer></script>
+</body>
+</html>
