@@ -360,13 +360,17 @@ body::after{
 @media (max-width:560px){
   :root{ --pad:12px; --k:332px; --face:clamp(84px, calc((100dvh - var(--k)) / 3 - 28px), 140px); }
   body{ padding:10px 6px 0; justify-content:flex-start; }
-  .cabinet{ flex:1 1 auto; min-height:0; }
+  .cabinet{ flex:none; }
   .marquee{ width:calc(100% - 24px); padding:12px 12px 8px; }
   .body{
-    flex:1 1 auto; min-height:0; display:grid; gap:8px; padding-top:14px;
+    flex:none;
+    display:grid;
+    gap:8px;
+    padding-top:14px;
     grid-template-columns:auto minmax(0,1fr);
     grid-template-rows:auto repeat(3,minmax(min-content,1fr)) auto;
-    border-width:0 6px 6px; border-radius:0 0 14px 14px;
+    border-width:0 6px 6px;
+    border-radius:0 0 14px 14px;
   }
   .hud{ grid-column:1 / -1; grid-row:1; }
   .star{ width:20px; height:20px; }
