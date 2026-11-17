@@ -4,7 +4,7 @@
 
   // Config
   const CONFIG = {
-    useImages: false,   // true once IMG27/ is ready
+    useImages: true,    // missing photos fall back to placeholders
     imgDir: 'IMG27',
     imgExt: 'jpg',
     spinMs: [1000, 1500, 2000],
@@ -14,16 +14,49 @@
   const PER_REEL = 9;
   const TOTAL = PER_REEL * 3;
 
-  // Dummy data. Items 3, 6, 9 are rare. Optional: img per item.
-  const REELS = [1, 2, 3].map(reel =>
-    Array.from({ length: PER_REEL }, (_, k) => {
-      const n = k + 1;
-      return {
-        title: `思い出 ${reel}-${n}`,
-        message: `これはリール${reel}の${n}番目のダミーメッセージです。実際のメッセージに差し替えてください。`,
-        rare: n % 3 === 0
-      };
-    })
+  // Memories: 9 per reel, in order. Exactly 3 per reel should be rare.
+  // Fields: m = message (required), t = title (optional), rare = true/false, img = file (optional)
+  const MEMORIES = [
+    // Reel 1
+    { m: 'ここにメッセージ', t: '思い出 1です', img: "IMG27/IMG_1490.png" },
+    { m: 'ここにメッセージ' },
+    { m: 'ここにメッセージ', rare: true },
+    { m: 'ここにメッセージ' },
+    { m: 'ここにメッセージ' },
+    { m: 'ここにメッセージ', rare: true },
+    { m: 'ここにメッセージ' },
+    { m: 'ここにメッセージ' },
+    { m: 'ここにメッセージ', rare: true },
+    // Reel 2
+    { m: 'ここにメッセージ' },
+    { m: 'ここにメッセージ' },
+    { m: 'ここにメッセージ', rare: true },
+    { m: 'ここにメッセージ' },
+    { m: 'ここにメッセージ' },
+    { m: 'ここにメッセージ', rare: true },
+    { m: 'ここにメッセージ' },
+    { m: 'ここにメッセージ' },
+    { m: 'ここにメッセージ', rare: true },
+    // Reel 3
+    { m: 'ここにメッセージ' },
+    { m: 'ここにメッセージ' },
+    { m: 'ここにメッセージ', rare: true },
+    { m: 'ここにメッセージ' },
+    { m: 'ここにメッセージ' },
+    { m: 'ここにメッセージ', rare: true },
+    { m: 'ここにメッセージ' },
+    { m: 'ここにメッセージ' },
+    { m: 'ここにメッセージ', rare: true }
+  ];
+
+  // Build REELS[r][i] = { title, message, rare, img }
+  const REELS = [0, 1, 2].map(r =>
+    MEMORIES.slice(r * PER_REEL, r * PER_REEL + PER_REEL).map((it, k) => ({
+      title: it.t || `思い出 ${r + 1}-${k + 1}`,
+      message: it.m,
+      rare: !!it.rare,
+      img: it.img
+    }))
   );
   const rareIdx = REELS.map(items => items.flatMap((it, i) => (it.rare ? [i] : [])));
 
@@ -67,7 +100,7 @@
   function setFace(r, i) {
     const reel = reels[r];
     if (i === null) {
-      reel.img.hidden = true; reel.ph.hidden = false; reel.label.textContent = '?';
+      reel.img.hidden = true; reel.ph.hidden = false; reel.label.textContent = '☆';
       return;
     }
     if (CONFIG.useImages && imgOk.has(r * PER_REEL + i)) {
