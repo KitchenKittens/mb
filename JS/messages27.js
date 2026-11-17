@@ -4,9 +4,9 @@
 
   /* ---------- Settings ---------- */
   const CONFIG = {
-    useImages: true,         // missing photos fall back to placeholders
+    useImages: true, // missing photos fall back to placeholders
     imgDir: "IMG27",
-    imgExt: "jpg",
+    imgExt: "png",
     spinMs: [1000, 1500, 2000],
     tickMs: 70,
     coinRare: 0.6            // rare chance per reel when a coin is in
@@ -117,7 +117,7 @@
     }
     reel.img.hidden = !usePhoto;
     reel.ph.hidden = usePhoto;
-    if (!usePhoto) reel.label.textContent = i === null ? "☆" : `PHOTO ${r + 1}-${pad(i + 1)}`;
+    if (!usePhoto) reel.label.textContent = i === null ? "Memory Slot" : `PHOTO ${r + 1}-${pad(i + 1)}`;
   }
   [0, 1, 2].forEach(r => showFace(r, null));
 
