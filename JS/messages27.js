@@ -14,42 +14,42 @@
   const PER_REEL = 9;
   const TOTAL = PER_REEL * 3;
 
-  /* ---------- Memories (edit here) ----------
-     m = message, t = title (optional), img = file, rare = true/false (optional)
+  /* ---------- Memories----------
+     m = message, t = title, img = file, rare = true/false (optional)
      Exactly 3 rare per reel. */
   const MEMORIES = [
     // Reel 1
-    { m: "何歳になっても「おめでとう」を伝えたい！", t: "思い出その1", img: "IMG27/IMG_1-1.png"},
-    { m: "Let's make this year sparkle a little more than the last", t: "思い出 その2", img: "IMG27/IMG_1-2.png" },
-    { m: "27 years of you, and I'm still counting my lucky stars!", t: "思い出 その3", img: "IMG27/IMG_1-3.png", rare: true },
-    { m: "都内の夜も意外と悪くないよね。色んなところでデートしようよ", t: "思い出 その4", img: "IMG27/IMG_1-4.png" },
-    { m: "Life is better with you in it, I'm not gonna lie.", t: "思い出 その5", img: "IMG27/IMG_1-5.png" },
-    { m: "ここにメッセージ", t: "思い出 その6", img: "IMG27/IMG_1-6.png", rare: true },
-    { m: "ここにメッセージ", t: "思い出 その7", img: "IMG27/IMG_1-7.png" },
-    { m: "ここにメッセージ", t: "思い出 その8", img: "IMG27/IMG_1-8.png" },
-    { m: "ここにメッセージ", t: "思い出 その9", img: "IMG27/IMG_1-9.png", rare: true },
+    { m: "何歳になっても「おめでとう」を伝えたい！", t: "思い出その1", img: "IMG27/IMG_1-1.png", rare: true},
+    { m: "Let's make this year sparkle a little more than the last.", t: "思い出 その2", img: "IMG27/IMG_1-2.png"},
+    { m: "27 years of you, and I'm still counting my lucky stars!", t: "思い出 その3", img: "IMG27/IMG_1-3.png"},
+    { m: "都内の夜も意外と悪くないよね。色んなところでデートしようよ。", t: "思い出 その4", img: "IMG27/IMG_1-4.png" },
+    { m: "Life is better with you in it, I'm not gonna lie. Next stop: anywhere with you.;)", t: "思い出 その5", img: "IMG27/IMG_1-5.png", rare: true},
+    { m: "Even the mirror is jealous of how close we are hehehe.", t: "思い出 その6", img: "IMG27/IMG_1-6.png", rare: true },
+    { m: "去年の冬も、今年の冬も、来年の冬も一緒に過ごそう。お互い暖かくね！", t: "思い出 その7", img: "IMG27/IMG_1-7.png" },
+    { m: "I bet the snow looks a lot better with two sets of footprints, don't you think?", t: "思い出 その8", img: "IMG27/IMG_1-8.png" },
+    { m: "東京タワーの足元で運動も。動き回れる日々たのし。", t: "思い出 その9", img: "IMG27/IMG_1-9.png"},
 
     // Reel 2
-    { m: "ここにメッセージ", t: "思い出 その10", img: "IMG27/IMG_2-1.png" },
-    { m: "ここにメッセージ", t: "思い出 その11", img: "IMG27/IMG_2-2.png" },
-    { m: "ここにメッセージ", t: "思い出 その12", img: "IMG27/IMG_2-3.png", rare: true },
-    { m: "ここにメッセージ", t: "思い出 その13", img: "IMG27/IMG_2-4.png" },
-    { m: "ここにメッセージ", t: "思い出 その14", img: "IMG27/IMG_2-5.png" },
-    { m: "ここにメッセージ", t: "思い出 その15", img: "IMG27/IMG_2-6.png", rare: true },
-    { m: "ここにメッセージ", t: "思い出 その16", img: "IMG27/IMG_2-7.png" },
-    { m: "ここにメッセージ", t: "思い出 その17", img: "IMG27/IMG_2-8.png" },
-    { m: "ここにメッセージ", t: "思い出 その18", img: "IMG27/IMG_2-9.png", rare: true },
+    { m: "The snow melted in your hand, but the warmth didn’t. TBT Io-House.", t: "思い出 その10", img: "IMG27/IMG_2-1.png", rare: true},
+    { m: "みんなで映るのもいとおかし。これからもたくさん撮りましょう。", t: "思い出 その11", img: "IMG27/IMG_2-2.png" },
+    { m: "黄色い花畑に、黄色い貴女の姿あり。お花畑が似合いますね！", t: "思い出 その12", img: "IMG27/IMG_2-3.png", rare: true },
+    { m: "Traffic mirror selfies, our faces in the cities, all so blurry, ain't so lovely?", t: "思い出 その13", img: "IMG27/IMG_2-4.png" },
+    { m: "ひょっとこカラオケ、これからも沢山歌い踊ろう！美声を聞かせておくれ。", t: "思い出 その14", img: "IMG27/IMG_2-5.png" },
+    { m: "You were the ticket for my neon night, with my favourite outfit.", t: "思い出 その15", img: "IMG27/IMG_2-6.png"},
+    { m: "何気ないお散歩も良きかな。貴女といると回り道したくなるけどね。", t: "思い出 その16", img: "IMG27/IMG_2-7.png"},
+    { m: "The mountains are huge, but so is my love to you ♡. Perhaps bigger?!", t: "思い出 その17", img: "IMG27/IMG_2-8.png", rare: true },
+    { m: "他撮りでも満面の笑顔ができるようなカップルに...私はなりたい。", t: "思い出 その18", img: "IMG27/IMG_2-9.png"},
 
     // Reel 3
-    { m: "ここにメッセージ", t: "思い出 その19", img: "IMG27/IMG_3-1.png" },
-    { m: "ここにメッセージ", t: "思い出 その20", img: "IMG27/IMG_3-2.png" },
-    { m: "ここにメッセージ", t: "思い出 その21", img: "IMG27/IMG_3-3.png", rare: true },
-    { m: "ここにメッセージ", t: "思い出 その22", img: "IMG27/IMG_3-4.png" },
-    { m: "ここにメッセージ", t: "思い出 その23", img: "IMG27/IMG_3-5.png" },
-    { m: "ここにメッセージ", t: "思い出 その24", img: "IMG27/IMG_3-6.png", rare: true },
-    { m: "ここにメッセージ", t: "思い出 その25", img: "IMG27/IMG_3-7.png" },
-    { m: "ここにメッセージ", t: "思い出 その26", img: "IMG27/IMG_3-8.png" },
-    { m: "ここにメッセージ", t: "思い出 その27", img: "IMG27/IMG_3-9.png", rare: true }
+    { m: "Cheers to a night out, and an even bigger cheers to you.", t: "思い出 その19", img: "IMG27/IMG_3-1.png" },
+    { m: "Two people, one color, same smiles. That's called a great compatability.", t: "思い出 その20", img: "IMG27/IMG_3-2.png", rare: true},
+    { m: "出張の思い出も二人の思い出として塗り替えます。これからも出張先へ連れて行ってネ。", t: "思い出 その21", img: "IMG27/IMG_3-3.png"},
+    { m: "Rain or shine, you’re my favorite flower in the garden. Although those hydrangeas look pretty neat.", t: "思い出 その22", img: "IMG27/IMG_3-4.png" },
+    { m: "Two paddles, one river, one direction: just like us!", t: "思い出 その23", img: "IMG27/IMG_3-5.png", rare: true},
+    { m: "透けた舟で見えるのは、魚と山と貴女の笑顔。", t: "思い出 その24", img: "IMG27/IMG_3-6.png"},
+    { m: "I might forget the blue skies and white clouds. But you'll always have a place in me.", t: "思い出 その25", img: "IMG27/IMG_3-7.png", rare: true},
+    { m: "急な坂道も肩を寄せれば緩やかになる...かもね？", t: "思い出 その26", img: "IMG27/IMG_3-8.png" },
+    { m: "道後の湯より、あなたの隣で温まる方が長持ちする。", t: "思い出 その27", img: "IMG27/IMG_3-9.png" }
   ];
 
   // REELS[r][i] = { title, message, rare, img }
