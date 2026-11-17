@@ -19,7 +19,7 @@
      Exactly 3 rare per reel. */
   const MEMORIES = [
     // Reel 1
-    { m: "何歳になっても「おめでとう」を伝えたい！", t: "思い出その1", img: "IMG27/IMG_1-1.png", rare: true},
+    { m: "何歳になっても「おめでとう」を伝えたい！", t: "思い出 その1", img: "IMG27/IMG_1-1.png", rare: true},
     { m: "Let's make this year sparkle a little more than the last.", t: "思い出 その2", img: "IMG27/IMG_1-2.png"},
     { m: "27 years of you, and I'm still counting my lucky stars!", t: "思い出 その3", img: "IMG27/IMG_1-3.png"},
     { m: "都内の夜も意外と悪くないよね。色んなところでデートしようよ。", t: "思い出 その4", img: "IMG27/IMG_1-4.png" },
